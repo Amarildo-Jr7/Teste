@@ -41,6 +41,7 @@ if confirmacao == 's' :
 [ 2 ] Cartão de Débito
 [ 3 ] Cartão de Crédito                      
 Digite o número para escolher: '''))
-
+if pagamento == 1:
+    print('O Valor será de R$ XX,XX com 5% de desconto inclúido')
 
 
