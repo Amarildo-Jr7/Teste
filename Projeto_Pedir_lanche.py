@@ -1,5 +1,8 @@
 from time import sleep
 
+print('{:=^130}'.format('\033[1;4;31m SEJA BEM VINDO AO MARILDIZ BURGUER\033[m '))
+
+
 print('POR FAVOR:')
 nome = input('Digite seu nome: ')
 print('Olá, {} !'.format(nome))
@@ -8,17 +11,20 @@ print('FAÇA SEU PEDIDO')
 
 print('-'*20)
 
-sandwich = str('Nome do sanduíche: ')
-batata = str('Tamanho da bata: [P/M/G] ')
-refrigerante = str('Qual refrigerante: ')
-print(f'Confira por favor seu pedido:{sandwich} ,{batata}, {refrigerante}')
-confir = str(input('O pedido está correto: [S/N]')).upper().strip
+
+
+def fazer_big_mac(sand = input('Digite seu sanduiche:') ):
+    print(f'Sanduíche: {sand}')
+
+def fazer_batata(tamanho = input('Tamanho da batata : ')):
+    print(f'Batata : {tamanho}')
+
+def preparar_refri(tipo = input('Qual refri: ') , tamanho = input('Tamanho do refri: ')):
+    print(f'{tipo} {tamanho}')
 
 
 
 
-<<<<<<< HEAD
-=======
 print('-'*20)
 
 confirmacao = str(input('Confere seu pedido. Está correto? Aperte S para sim ou N para não ? ')).strip()
@@ -35,8 +41,4 @@ if confirmacao == 's' :
 [ 2 ] Cartão de Débito
 [ 3 ] Cartão de Crédito                      
 Digite o número para escolher: '''))
-if pagamento == 1:
-    print('O Valor será de R$ XX,XX com 5% de desconto inclúido')
 
-
->>>>>>> 09caac161e87aca4c412b5c302997bae7e669d9b
